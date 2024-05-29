@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pasanmidev.skyroutes.models",
+    "module": "common-models",
+    "version": "1.0.4-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "common-models-1.0.4-SNAPSHOT.jar",
+          "url": "common-models-1.0.4-SNAPSHOT.jar",
+          "size": 44327,
+          "sha512": "94918af6ce43ba9740832bd5ce26eec735f0867b5ff5a220ae177933ebdd340d7bb8ad714305f7b5c072a9532807dde8b72e5938034ba74f72418313d8731d2c",
+          "sha256": "bfc7b052d04ccbab9ccc07233d2589e583161569bee99965c598f3833893aad7",
+          "sha1": "b7ec2058fd07aefd73d7ff9565f988ebe19fcff1",
+          "md5": "fd22e8a4b8df308cc580717360d7c95a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "24.1.0"
+          }
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-admin",
+          "version": {
+            "requires": "9.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-models-1.0.4-SNAPSHOT.jar",
+          "url": "common-models-1.0.4-SNAPSHOT.jar",
+          "size": 44327,
+          "sha512": "94918af6ce43ba9740832bd5ce26eec735f0867b5ff5a220ae177933ebdd340d7bb8ad714305f7b5c072a9532807dde8b72e5938034ba74f72418313d8731d2c",
+          "sha256": "bfc7b052d04ccbab9ccc07233d2589e583161569bee99965c598f3833893aad7",
+          "sha1": "b7ec2058fd07aefd73d7ff9565f988ebe19fcff1",
+          "md5": "fd22e8a4b8df308cc580717360d7c95a"
+        }
+      ]
+    }
+  ]
+}
