@@ -1,6 +1,5 @@
 package com.pasanmidev.skyroutes.models.firebase;
 
-import com.google.type.LatLng;
 import com.pasanmidev.skyroutes.models.map.request.MyLatLng;
 import com.pasanmidev.skyroutes.models.weather.OpenWeatherResponse;
 
@@ -20,8 +19,22 @@ public class MyRouteFirebasePush implements Serializable {
     private HashMap<String, MyLatLng> listPointsRouteHash;
     private HashMap<String, OpenWeatherResponse> listaAuxRespuestasWeatherHash;
     private HashMap<String, Long> arrayLatLngForTimeHash;
+    private HashMap<String, Boolean> arrayBooleanForSunIncidence;
 
     public MyRouteFirebasePush() {
+    }
+
+    public MyRouteFirebasePush(MyRouteFirebasePush other) {
+        this.id = other.id;
+        this.origin = other.origin;
+        this.destination = other.destination;
+        this.encodedPolyline = other.encodedPolyline;
+        this.timeRequest = other.timeRequest;
+        // Crear nuevas instancias de los mapas para evitar modificar los originales
+        this.listPointsRouteHash = new HashMap<>(other.listPointsRouteHash);
+        this.listaAuxRespuestasWeatherHash = new HashMap<>(other.listaAuxRespuestasWeatherHash);
+        this.arrayLatLngForTimeHash = new HashMap<>(other.arrayLatLngForTimeHash);
+        this.arrayBooleanForSunIncidence = new HashMap<>(other.arrayBooleanForSunIncidence);
     }
 
     public MyRouteFirebasePush(MyRoute myRoute) {
@@ -33,20 +46,26 @@ public class MyRouteFirebasePush implements Serializable {
         this.listPointsRouteHash = new HashMap<>();
         this.listaAuxRespuestasWeatherHash = new HashMap<>();
         this.arrayLatLngForTimeHash = new HashMap<>();
+        this.arrayBooleanForSunIncidence = new HashMap<>();
 
         List<MyLatLng> puntosConsultaWeather = myRoute.getListPointsRouteHash();
         for (int i = 0; i < puntosConsultaWeather.size(); i++) {
-            this.listPointsRouteHash.put(i +"", puntosConsultaWeather.get(i));
+            this.listPointsRouteHash.put(i + "", puntosConsultaWeather.get(i));
         }
 
         List<OpenWeatherResponse> responseWeather = myRoute.getListaAuxRespuestasWeatherHash();
         for (int i = 0; i < responseWeather.size(); i++) {
-            this.listaAuxRespuestasWeatherHash.put(i +"", responseWeather.get(i));
+            this.listaAuxRespuestasWeatherHash.put(i + "", responseWeather.get(i));
         }
 
         List<Long> timerOriginToRequest = myRoute.getArrayLatLngForTimeHash();
         for (int i = 0; i < timerOriginToRequest.size(); i++) {
             this.arrayLatLngForTimeHash.put(i + "", timerOriginToRequest.get(i));
+        }
+
+        List<Boolean> sunIncidenceArray = myRoute.getArrayBooleanForSunIncidence();
+        for (int i = 0; i < sunIncidenceArray.size(); i++) {
+            this.arrayBooleanForSunIncidence.put(i + "", sunIncidenceArray.get(i));
         }
     }
 
@@ -114,6 +133,14 @@ public class MyRouteFirebasePush implements Serializable {
         this.arrayLatLngForTimeHash = arrayLatLngForTimeHash;
     }
 
+    public HashMap<String, Boolean> getArrayBooleanForSunIncidence() {
+        return arrayBooleanForSunIncidence;
+    }
+
+    public void setArrayBooleanForSunIncidence(HashMap<String, Boolean> arrayBooleanForSunIncidence) {
+        this.arrayBooleanForSunIncidence = arrayBooleanForSunIncidence;
+    }
+
     public Map<String, Object> toMap() {
         Map<String, Object> result = new HashMap<>();
         result.put("id", id);
@@ -124,6 +151,7 @@ public class MyRouteFirebasePush implements Serializable {
         result.put("listPointsRouteHash", listPointsRouteHash);
         result.put("listaAuxRespuestasWeatherHash", listaAuxRespuestasWeatherHash);
         result.put("arrayLatLngForTimeHash", arrayLatLngForTimeHash);
+        result.put("arrayBooleanForSunIncidence", arrayBooleanForSunIncidence);
         return result;
     }
 }

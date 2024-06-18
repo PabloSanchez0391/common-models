@@ -15,4 +15,7 @@ public class CustomComputeRoutesResponseTime {
     public CustomComputeRoutesResponseTime(List<RouteTime> routes) {
         this.routes = routes;
     }
+
+    public CustomComputeRoutesResponseTime() {
+    }
 }

@@ -3,28 +3,28 @@
   <groupId>com.pasanmidev.skyroutes.models</groupId>
   <artifactId>common-models</artifactId>
   <versioning>
-    <lastUpdated>20240529144543</lastUpdated>
+    <lastUpdated>20240607071041</lastUpdated>
     <snapshot>
-      <timestamp>20240529.144543</timestamp>
+      <timestamp>20240607.071041</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0.4-20240529.144543-1</value>
-        <updated>20240529144543</updated>
+        <value>1.1.8-20240607.071041-1</value>
+        <updated>20240607071041</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>module</extension>
-        <value>1.0.4-20240529.144543-1</value>
-        <updated>20240529144543</updated>
+        <value>1.1.8-20240607.071041-1</value>
+        <updated>20240607071041</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0.4-20240529.144543-1</value>
-        <updated>20240529144543</updated>
+        <value>1.1.8-20240607.071041-1</value>
+        <updated>20240607071041</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.1.8-SNAPSHOT</version>
 </metadata>

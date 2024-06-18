@@ -14,4 +14,7 @@ public class EncodedPolyline {
     public EncodedPolyline(String encodedPolyline) {
         this.encodedPolyline = encodedPolyline;
     }
+
+    public EncodedPolyline() {
+    }
 }

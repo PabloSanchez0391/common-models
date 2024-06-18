@@ -16,4 +16,7 @@ public class CustomComputeRoutesResponse {
     public CustomComputeRoutesResponse(List<Route> routes) {
         this.routes = routes;
     }
+
+    public CustomComputeRoutesResponse() {
+    }
 }

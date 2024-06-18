@@ -33,7 +33,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.pasanmidev.skyroutes.models"
             artifactId = "common-models"
-            version = "1.0.4-SNAPSHOT"
+            version = "1.1.8-SNAPSHOT"
 
             from(components["java"])
         }

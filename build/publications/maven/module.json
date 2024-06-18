@@ -3,7 +3,7 @@
   "component": {
     "group": "com.pasanmidev.skyroutes.models",
     "module": "common-models",
-    "version": "1.0.4-SNAPSHOT",
+    "version": "1.1.8-SNAPSHOT",
     "attributes": {
       "org.gradle.status": "integration"
     }
@@ -25,13 +25,13 @@
       },
       "files": [
         {
-          "name": "common-models-1.0.4-SNAPSHOT.jar",
-          "url": "common-models-1.0.4-SNAPSHOT.jar",
-          "size": 44327,
-          "sha512": "94918af6ce43ba9740832bd5ce26eec735f0867b5ff5a220ae177933ebdd340d7bb8ad714305f7b5c072a9532807dde8b72e5938034ba74f72418313d8731d2c",
-          "sha256": "bfc7b052d04ccbab9ccc07233d2589e583161569bee99965c598f3833893aad7",
-          "sha1": "b7ec2058fd07aefd73d7ff9565f988ebe19fcff1",
-          "md5": "fd22e8a4b8df308cc580717360d7c95a"
+          "name": "common-models-1.1.8-SNAPSHOT.jar",
+          "url": "common-models-1.1.8-SNAPSHOT.jar",
+          "size": 48036,
+          "sha512": "32022373fa1f1a79186b2e9e1a6c4ba1d51b009195c0c35f62c7f211d30cefcd92b4611caecd65944063e6b4ab3269c1e0f9100ec0346466cb74215140cc5437",
+          "sha256": "49ec06e222f0433e862e5419d4c64baf35c78b99f6c5c996fd16e3eac20049a3",
+          "sha1": "8a4658ad6b501aec57e13b94d91b211ce95b5825",
+          "md5": "39a245dec23ace6de76deaafde7e2e5a"
         }
       ]
     },
@@ -69,13 +69,13 @@
       ],
       "files": [
         {
-          "name": "common-models-1.0.4-SNAPSHOT.jar",
-          "url": "common-models-1.0.4-SNAPSHOT.jar",
-          "size": 44327,
-          "sha512": "94918af6ce43ba9740832bd5ce26eec735f0867b5ff5a220ae177933ebdd340d7bb8ad714305f7b5c072a9532807dde8b72e5938034ba74f72418313d8731d2c",
-          "sha256": "bfc7b052d04ccbab9ccc07233d2589e583161569bee99965c598f3833893aad7",
-          "sha1": "b7ec2058fd07aefd73d7ff9565f988ebe19fcff1",
-          "md5": "fd22e8a4b8df308cc580717360d7c95a"
+          "name": "common-models-1.1.8-SNAPSHOT.jar",
+          "url": "common-models-1.1.8-SNAPSHOT.jar",
+          "size": 48036,
+          "sha512": "32022373fa1f1a79186b2e9e1a6c4ba1d51b009195c0c35f62c7f211d30cefcd92b4611caecd65944063e6b4ab3269c1e0f9100ec0346466cb74215140cc5437",
+          "sha256": "49ec06e222f0433e862e5419d4c64baf35c78b99f6c5c996fd16e3eac20049a3",
+          "sha1": "8a4658ad6b501aec57e13b94d91b211ce95b5825",
+          "md5": "39a245dec23ace6de76deaafde7e2e5a"
         }
       ]
     }

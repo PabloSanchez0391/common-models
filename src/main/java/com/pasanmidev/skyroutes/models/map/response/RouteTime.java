@@ -10,4 +10,7 @@ public class RouteTime {
     public void setDuration(String duration) {
         this.duration = duration;
     }
+
+    public RouteTime() {
+    }
 }

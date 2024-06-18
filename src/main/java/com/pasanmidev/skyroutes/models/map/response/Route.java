@@ -27,5 +27,8 @@ public class Route {
         this.duration = duration;
         this.polyline = polyline;
     }
+
+    public Route() {
+    }
 }
 

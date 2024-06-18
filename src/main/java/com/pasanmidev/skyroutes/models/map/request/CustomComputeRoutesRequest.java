@@ -14,4 +14,7 @@ public class CustomComputeRoutesRequest {
         this.origin = origin;
         this.destination = destination;
     }
+
+    public CustomComputeRoutesRequest() {
+    }
 }

@@ -20,4 +20,7 @@ public class Location {
     public void setLatLng(MyLatLng latLng) {
         this.latLng = latLng;
     }
+
+    public Location() {
+    }
 }
